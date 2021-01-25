@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-     protected $fillable = ['title','content','slug'];
+     protected $fillable = ['title','content','slug', 'created_at'];
 
 
     protected static function booted()

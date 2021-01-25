@@ -9,7 +9,8 @@ class PostController extends Controller
 {
     public function index()
     {
-        return Post::all()->orderByDesc('created_at');
+
+        return Post::orderBy('created_at', 'desc')->get();
     }
 
     public function show(Post $post)
